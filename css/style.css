@@ -1,0 +1,420 @@
+/* Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=PT+Sans:wght@400;700&family=Roboto:ital,wght@0,400;1,700&display=swap');
+
+  /*fuentes*/
+  **{
+    font-family:'roboto', sans-serif;
+    padding: 0;
+    margin:0 ;
+    box-sizing: border-box;
+  }
+ 
+h1{
+    font-family: 'roboto',sans-serif;
+    font-size:  45px; 
+    font-weight: 700;
+    text-align: center;
+  }
+
+  h2{
+    font-family: 'roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: justify;
+  }
+
+  p{
+    font-size: 20px;
+    font-family: 'roboto', sans-serif;
+    font-weight: 400;
+    line-height: 34 px;
+    /*text-align: justify;*/
+  }
+
+  /* index - Inicio página*/
+.menu {
+    background-color:#333;
+    padding: 8px 30px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    }
+
+    .container {
+      padding-right: 0;
+      padding-left: 0;
+  }
+  
+
+    .navbar-brand img {
+      height: 120px; /* Ajusta la altura según sea necesario */
+      width: auto;
+      margin-left: 0;
+      padding-left: 0;
+      display: flex;
+      justify-content: start;
+  }
+  
+
+  
+
+
+.menu a{ 
+font-family: 'roboto';
+ color:gainsboro;
+ text-decoration: none;
+ font-size: 20px;
+ font-weight: 700;
+
+}
+
+.menu ul li a:hover{
+text-decoration:underline;
+color:white;
+}
+
+.navbar-toggler-icon {
+    border-color:white;
+    border:solid;
+}
+
+
+
+  
+.imagen-principal img{
+  width: 100%;
+ height:500px;
+ margin: 0%;
+ padding: 0%;
+}
+
+
+.texto-presentacion, h1 { 
+  width: 100%;
+  height: auto;
+  margin: 10px,20px;
+  padding: 15px;
+  text-align: left;
+}
+.textop {
+  width: 100%;
+  height: auto;
+  margin: 10px,20px;
+  padding: 15px;
+  text-align: left;
+}
+
+
+.boton{
+  width: 150px;
+  height: 75px;
+  background-color: #333;
+  border-radius: 8px;
+  padding: 50px, 50px;
+  margin: auto;
+  margin-left: 250px;
+  font-family: 'roboto';
+  color: white;
+  display: grid;
+  text-align:center;
+  justify-content:center;
+  align-items:center;
+}
+.intro {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+
+
+.intro-img {
+  width: 100%;
+  height: auto;
+  max-width:auto;
+  margin: 10px auto;
+  margin-top:60px ;
+  margin-left: 0%;
+  padding-left: 0%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+
+
+@media (min-width: 768px) {
+  .intro {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows:1;
+      grid-template-areas: "texto-presentacion intro-img";
+      gap: 20px;
+      max-width:auto;
+      margin: 20px auto;
+  }
+}
+
+
+.texto-presentacion{
+  padding:20px;
+  margin-left: 20px;
+  width:90%;
+  max-width:90% ;
+  
+}
+
+.texto-presentacion{
+  grid-template-areas: texto-presentacion;
+}
+
+.intro-img{
+  grid-template-areas:intro-img;
+}
+.intro-img{
+  width:85%;
+  height: auto;
+  margin: 80px 20;
+  padding: 45px;
+  padding-top: 0;
+  display: grid;
+  justify-content:center;
+  align-content:center;
+
+}
+
+
+/**Sección nosotros**/
+
+
+.nosotros{
+  display: grid;
+grid-template-columns: 1fr;
+gap: 20px;
+}
+  
+@media (min-width: 768px) {
+  .nosotros{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+        grid-template-rows:repeat(2, 450px );
+        grid-template-areas: 
+        "texto-nosotros foto1"
+        "texto-nosotros foto2";
+        }
+  
+ 
+}
+
+.imagenes-nosotros img{
+  width: 85%;
+  height: auto;
+}
+
+.foto1{
+  grid-template-areas: foto1;
+}
+
+.foto2{
+  grid-template-areas: foto2;
+}
+
+
+.texto-nosotros{
+ grid-template-areas: texto-nosotros;
+ height: 30%;
+ 
+
+}
+.nosotros h1{
+  text-align: center;
+  width: 100%;
+}
+
+.nosotros h2{
+  text-align: center;
+  width: 100%;
+}
+
+.nosotros p{
+  text-align: center;
+  width:100% ;
+}
+  
+
+
+/**Sección servicios**/
+
+.servicio h2{
+  width: 25%;
+ text-align: center;
+  margin: 8px 20px;
+  padding: 15px;
+}
+
+.servicio p, img{
+  width: 25%;
+  height: auto;
+  margin: 8px 20px;
+  padding: 15px;
+
+}
+
+/**Sección proyectos**/
+
+.proyectos h2,p{
+   
+   margin: 8px,20px;
+  padding:15px;
+}
+
+.proyectos p{
+  width: 25%;
+}
+
+.proyectos img{
+  width: 25%;
+  height: 180px;
+  margin: 8px,10px;
+  padding: 15px;
+
+}
+
+.proyecto1 img{
+
+ width: 25%;
+  height: 180px;
+  margin: auto;
+}
+
+
+   /**Sección Contacto**/
+
+   .contacto h1, p{
+    width: 50%;
+    margin: 8px 20;
+    padding:15px;
+
+}
+
+   .mapa,
+   .formulario{
+    width: 50%;
+    margin: 20px,auto;
+    padding:15px;
+
+}
+
+.formulario{
+  background-color:gray;
+}
+
+.campo{
+
+  margin-bottom: 16 px;
+      
+}
+
+
+.campo label{
+  color:white;
+  font-weight: 'roboto', 'san serif';
+  margin-bottom: 16px;
+  margin: auto;
+ 
+
+}
+.campo textarea{
+  height:320px;
+  width:100%;
+}
+
+/**Sección footer**/
+
+.footer{
+ 
+  background-color:#333;
+  width: 100%;
+  height: auto;
+  margin: 15px, auto;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+ 
+}
+
+@media (min-width: 768px) {
+  .footer {
+    display: grid;
+  grid-template-columns:4fr 3fr 4fr;
+  grid-template-rows:1;
+  grid-template-areas:
+  "footer-empresa"
+  "footer-redes"
+  "location-container";
+  justify-content:center;
+  align-items:center;
+  justify-self: center;
+  gap: 80px;
+  }
+}
+
+/* -------------------------------------------------------------------------------/*
+
+
+/*grid template areas footer*/
+
+
+.footer-empresa{
+  grid-template-areas: footer-empresa;
+  justify-self: start;
+}
+
+.footer-redes{
+  grid-template-areas: footer-redes;
+  justify-self: center;
+}
+
+.location-container{
+  grid-template-areas: location-container;
+  justify-self: center;
+}
+/* Ends grid template areas footer*/
+
+
+.logoFooter{
+  height: 120px;
+  width:auto;
+  margin: auto;
+  margin-left: 20px;
+  padding:0;
+  display: grid;
+  justify-content: center;
+  justify-self: center;
+
+  
+}
+
+.iconRedes a {
+  width: 65px;
+  height:auto;
+  padding:2px;
+  font-size: 20px;
+  margin: 0 10px;
+  color: white;
+    }
+
+
+.location-container {
+  display: flex;
+  align-items: center;
+  font-family:'roboto', sans-serif; 
+  color: white;
+}
+
+.location-icon {
+  margin-right: 8px; 
+  color: white;
+}
+
