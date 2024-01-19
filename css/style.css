@@ -190,7 +190,7 @@ color:white;
 .nosotros{
   display: grid;
 grid-template-columns: 1fr;
-gap: 20px;
+gap: 2rem;
 }
   
 @media (min-width: 768px) {
@@ -207,8 +207,10 @@ gap: 20px;
 }
 
 .imagenes-nosotros img{
-  width: 85%;
+  width: 90%;
   height: auto;
+  margin: 20px ;
+  margin-bottom: 20px;
 }
 
 .foto1{
@@ -245,24 +247,9 @@ gap: 20px;
 
 /**Sección servicios**/
 
-/**.servicio h2{
-  width: 25%;
- text-align: center;
-  margin: 8px 20px;
-  padding: 15px;
-}
-
-.servicio p, img{
-  width: 25%;
-  height: auto;
-  margin: 8px 20px;
-  padding: 15px;
-
-}**/
-
 .servicio{
   width: 85%;
-  margin: auto;
+  margin: 20px auto;
   padding:0;
   display: grid;
   grid-template-columns:1fr;
@@ -281,22 +268,26 @@ gap: 20px;
 .bloque-servicio{
 text-align: center;
 display: grid;
-justify-content: space-between;
+justify-content:center;
 }
 
 .bloque-texto{
   text-align: center;
   display: grid;
   align-content: center;
+  justify-self: center;
   margin: 0;
   padding: 0;
+  margin-bottom: auto;
 }
 
 .bloque-imagen{
   margin: 0;
   padding: 0;
+  display: grid;
+  justify-self: center;
   justify-content: center;
-  width:100px;
+  width:25%;
 }
 
 /**Sección proyectos**/
