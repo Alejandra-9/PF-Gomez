@@ -47,47 +47,50 @@
   </nav>
 <!--end nav-->
     </main>
-    <!-- start header-->
-    <header class="mapa">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d28488.03918903967!2d-55.02058485!3d-26.80797265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1ses-419!2sar!4v1702092172931!5m2!1ses-419!2sar" 
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </header>
-    <!--end header-->
+    <!-- start main-->
 <main class="contacto">
     <!--star intro-->
-    <section>
+    <section class="contacto-mapatexto">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d28488.03918903967!2d-55.02058485!3d-26.80797265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1ses-419!2sar!4v1702092172931!5m2!1ses-419!2sar" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
         <h1>Contacto</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae sunt quasi amet facilis,
-             possimus recusandae maiores ullam quibusdam quae eveniet veritatis officia, deleniti
-              sint pariatur natus illo sed totam consequuntur!</p>
+            possimus recusandae maiores ullam quibusdam quae eveniet veritatis officia, deleniti
+            sint pariatur natus illo sed totam consequuntur!
+        </p>
     </section>
-    <section class="formulario">
-        <form class="formulario" action="envio.php" method="post">
-            <div class="campo">
+
+    <section class="formulario-contenedor"> 
+        <form class="formulario campo" action="envio.php" method="post">
+          <legend>Contáctanos llenando todos los campos</legend>
+         
             <label for="nombre"> Nombre</label>
-            <input type="text" id="Nombre">
-        </div>
-        <div class="campo">
-            <label for="email"> Email</label>
-            <input type="email" id="email">
-        </div>
-        <div class="campo">
+            <input class="input-text" type="text" id="Nombre" placeholder="Nombre y Apellido">
+         
 
-           <label for="tel"> Teléfono</label>
-            <input type="tel" id="tel">
-        </div>
+        
+            <br> <label for="email"> Email</label>
+            <input class="input-text" type="email" id="email" placeholder="Correo electrónico">
+        
 
-        <div class="campo">
+        
+            <br><label for="tel"> Teléfono</label>
+            <input class="input-text" type="tel" id="tel" placeholder="Número telefónico">
+        
 
-           <label for="mensaje"> Deje su mensaje</label>
+        
+
+          <br> <label for="mensaje"> Deje su mensaje</label>
            <br>
             <textarea name="" id="" cols="30" rows="10"></textarea>
-        </div>
-        <input type="reset" value="Cancelar">
-        <input type="submit" value="Enviar">
+        
+            <input class="boton-contacto" type="reset" value="Cancelar">
+            <input class="boton-contacto" type="submit" value="Enviar">
 
          </form>
     </section>
+  </main>
     <!--ends intro-->
   <!--start footer-->
   <footer class="footer">
@@ -108,7 +111,7 @@
         <span class="location-icon">
           <i class="fas fa-map-marker-alt"></i>
         </span>
-        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+        <span>Lorem, ipsum dolor sit amet amet elit.</span>
       </div>
   
   </footer>
