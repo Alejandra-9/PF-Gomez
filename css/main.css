@@ -1,0 +1,452 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=PT+Sans:wght@400;700&family=Roboto:ital,wght@0,400;1,700&display=swap");
+* {
+  font-family: "roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "roboto", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+}
+
+h2 {
+  font-family: "roboto", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: justify;
+}
+
+p {
+  font-size: 20px;
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+/* index - Inicio página*/
+.menu {
+  background-color: #333;
+  padding: 8px 30px;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.menu a {
+  font-family: "roboto", sans-serif;
+  color: gainsboro;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+}
+.menu ul li a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.navbar-brand img {
+  height: 120px;
+  width: auto;
+  margin-left: 0;
+  padding-left: 0;
+  display: flex;
+  justify-content: start;
+}
+
+.navbar-toggler-icon {
+  border-color: #fff;
+  border: solid;
+}
+
+.imagen-principal img {
+  width: 100%;
+  height: 500px;
+  margin: 0%;
+  padding: 0%;
+}
+
+.textop, .texto-presentacion h1 {
+  width: 100%;
+  height: auto;
+  margin: 10px, 20px;
+  padding: 15px;
+  text-align: left;
+}
+
+.texto-presentacion {
+  padding: 20px;
+  margin-left: 20px;
+  width: 90%;
+  max-width: 90%;
+  grid-template-areas: texto-presentacion;
+}
+.boton {
+  width: 150px;
+  height: 75px;
+  background-color: #333;
+  border-radius: 8px;
+  padding: 50px, 50px;
+  margin: auto;
+  margin-left: 250px;
+  font-family: "roboto";
+  color: #fff;
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .intro {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1;
+    grid-template-areas: "texto-presentacion intro-img";
+    gap: 20px;
+    max-width: auto;
+    margin: 20px auto;
+  }
+}
+.intro-img {
+  width: 100%;
+  height: auto;
+  margin: 80px 20;
+  padding: 45px;
+  padding-top: 0;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: intro-img;
+}
+
+@media (min-width: 768px) {
+  .intro-img {
+    padding-top: 70px;
+  }
+}
+/**Sección nosotros**/
+.nosotros {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  justify-content: center;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin: auto;
+}
+.nosotros h1 {
+  width: 100%;
+}
+.nosotros h2 {
+  text-align: center;
+  width: 100%;
+}
+.nosotros p {
+  text-align: center;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .nosotros {
+    margin-left: 20px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 450px);
+    grid-template-areas: "texto-nosotros foto1" "texto-nosotros foto2";
+  }
+}
+.imagenes-nosotros img {
+  width: 90%;
+  height: auto;
+  margin: 20px;
+  margin-bottom: 20px;
+}
+
+.foto1 {
+  grid-template-areas: foto1;
+}
+
+.foto2 {
+  grid-template-areas: foto2;
+}
+
+.texto-nosotros {
+  width: 100%;
+  grid-template-areas: texto-nosotros;
+  height: 65%;
+}
+
+/**Sección footer**/
+.footer {
+  background-color: #333;
+  width: 100%;
+  height: auto;
+  margin: 15px, auto;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 4fr 3fr 4fr;
+    grid-template-rows: 1;
+    grid-template-areas: "footer-empresa" "footer-redes" "location-container";
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    gap: 80px;
+  }
+}
+.footer-empresa {
+  grid-template-areas: footer-empresa;
+  justify-self: start;
+}
+
+.footer-redes {
+  grid-template-areas: footer-redes;
+  justify-self: center;
+}
+
+.location-container {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  font-family: "roboto", sans-serif sans-serif;
+  color: #fff;
+  grid-template-areas: location-container;
+  justify-self: center;
+}
+
+.logoFooter {
+  height: 120px;
+  width: auto;
+  margin: auto;
+  margin-left: 20px;
+  padding: 0;
+  display: grid;
+  justify-content: center;
+  justify-self: center;
+}
+
+.iconRedes a {
+  width: 65px;
+  height: auto;
+  padding: 2px;
+  font-size: 20px;
+  margin: 0 10px;
+  color: #fff;
+}
+
+.location-icon {
+  margin-right: 6px;
+  color: #fff;
+  display: flex;
+  justify-content: left;
+}
+
+/**Sección servicios**/
+.servicio {
+  width: 85%;
+  margin: 20px auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .servicio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: auto;
+    padding-bottom: 15px;
+  }
+}
+.bloque-servicio {
+  text-align: center;
+  display: grid;
+  justify-content: center;
+}
+
+.bloque-texto {
+  text-align: center;
+  display: grid;
+  align-content: center;
+  justify-self: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: auto;
+}
+
+.bloque-imagen {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  justify-self: center;
+  justify-content: center;
+  width: 25%;
+}
+
+/**Sección proyectos**/
+.proyectos {
+  margin-left: 80px;
+  margin-top: 20px;
+  width: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  justify-content: center;
+}
+.proyectos img {
+  width: 250px;
+  height: 220px;
+  margin: 8px, 10px;
+  padding: 15px;
+}
+
+@media (min-width: 768px) {
+  .proyectos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    gap: 2rem;
+  }
+}
+.pro {
+  display: grid;
+  justify-self: center;
+  justify-content: center;
+}
+.pro p {
+  width: 70%;
+}
+.pro input {
+  margin-bottom: 15px;
+  margin-left: 15px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+/**Sección Contacto**/
+.contacto {
+  margin-top: 35px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+@media (min-width: 768px) {
+  .contacto {
+    margin-top: 35px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "contacto-mapatexto formulario-contenedor";
+    gap: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .contacto-mapatexto {
+    grid-column: 1;
+    /**grid-template-areas: contacto-mapatexto;**/
+  }
+}
+@media (min-width: 768px) {
+  .formulario-contenedor {
+    grid-column: 2;
+    /**grid-template-areas: formulario-contenedor;**/
+  }
+}
+.formulario {
+  background-color: #ccc;
+  width: 90%;
+  height: auto;
+  margin: 0;
+  margin-right: 20px;
+  padding: 2rem;
+  border-radius: 1rem;
+  align-items: end;
+}
+.formulario legend {
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.contacto-mapa {
+  width: 50%;
+  margin: 20px, auto;
+  padding: 15px;
+}
+
+.campo {
+  margin-bottom: 1rem;
+}
+.campo label {
+  color: #fff;
+  font-weight: "roboto", sans-serif;
+  margin-bottom: 16px;
+  margin: auto;
+}
+.campo textarea {
+  height: 20rem;
+  width: 100%;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.input-text {
+  width: 100%;
+  border: none;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.boton-contacto {
+  margin-top: 15px;
+  margin-left: 47px;
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  width: 40%;
+  text-align: center;
+  border: none;
+  background-color: lightgrey;
+  color: #fff;
+}
+
+/*# sourceMappingURL=main.css.map */
