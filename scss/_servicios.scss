@@ -1,4 +1,4 @@
-/**Sección servicios**/
+//Sección servicios
 
 .servicio{
     width: 85%;
@@ -44,13 +44,26 @@
     width:25%;
   }
   
-  /**Sección proyectos**/
-  
-   .proyectos{
+  //Sección proyectos
+
+.encabezado h1{
+text-align: justify;
+margin-left:75px;
+}
+
+  @media(min-width: 768px){
+  .encabezado h1{
+text-align: center;
+margin-left: 0;
+margin-right: 90px;
+  }
+}
+  .proyectos{
     margin-left: 80px;
     margin-top:$margin-20;
     width: auto;
    @include grid-center;
+   
 
     img{
     width: 250px;
@@ -78,7 +91,7 @@
     justify-self: center;
     justify-content: center;
     p{
-      width: 70%;
+      width: 85%;
     }
   input{
       margin-bottom:15px;
@@ -87,10 +100,8 @@
       justify-content: center;
       align-content: center;
     }}
-  
-    
-    
-/**Sección Contacto**/
+
+ //Sección Contacto
   
   .contacto{
     margin-top: 35px;
@@ -116,12 +127,21 @@
        
       }
   
+      .contacto-mapatexto{
+        h1{
+          text-align: justify;
+         }
+         p{
+        margin-left: 10px;
+        margin-right: 10px;
+        }
+      }
 
   
   @media (min-width: 768px){
     .contacto-mapatexto{
     grid-column: 1;
-    /**grid-template-areas: contacto-mapatexto;**/
+    //grid-template-areas: contacto-mapatexto;
   }
   }
    
@@ -129,29 +149,24 @@
   @media (min-width: 768px){
     .formulario-contenedor {
     grid-column: 2;
-    /**grid-template-areas: formulario-contenedor;**/
+    //grid-template-areas: formulario-contenedor;
   }
   }
   
   
   .formulario{
-    background-color:$gray;
-    width: 90%;
-    height: auto;
-    margin: 0 ;
+    @include contenido(90%,auto,0,2rem);
+    background-color:$dark-gray;
     margin-right:$margin-20;
-    padding: 2rem;
     border-radius: 1rem;
     align-items: end;
 
     legend{
-    text-align: center;
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 2rem;
-    color:$white;
-  } }
+   @include texto-base($font-family,25px,700,$white);
+   text-align: center;
+   text-transform: uppercase;
+   margin-bottom: 2rem;
+   } }
   
 
   .contacto-mapa{

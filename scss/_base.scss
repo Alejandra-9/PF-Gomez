@@ -11,6 +11,7 @@ $accent-color: lightgrey;
 
 // Colores
 $white: #fff;
+$dark-gray: #413f3f;
 $black: #000;
 $gray: #ccc;
 $light-grey: lightgrey;
@@ -85,6 +86,14 @@ p {
 @mixin titulo($text-align, $width) {
   text-align: $text-align;
   width: $width;
+}
+
+//Mixin ajuste contenido
+@mixin contenido($width,$height,$margin, $padding){
+ width:$width; 
+ height:$height;
+ margin: $margin;
+ padding: $padding;
 }
 
 
