@@ -102,8 +102,8 @@ margin-right: 90px;
     }}
 
  //Sección Contacto
-  
-  .contacto{
+
+   .contacto{
     margin-top: 35px;
     margin-left:$margin-20;
     margin-bottom:$margin-20;
@@ -111,7 +111,7 @@ margin-right: 90px;
     grid-template-columns: 1fr ;
     grid-template-rows: 1fr;
     }
-
+        
     @media (min-width: 768px) {
         .contacto{
         margin-top: 35px;
@@ -123,10 +123,9 @@ margin-right: 90px;
         grid-template-areas: 
         "contacto-mapatexto formulario-contenedor";
         gap: 2rem;
-      } 
-       
-      }
-  
+      }  }
+
+
       .contacto-mapatexto{
         h1{
           text-align: justify;
@@ -210,9 +209,12 @@ margin-right: 90px;
     text-align: center;
     border:none;
     background-color:$light-grey;
-    color:$white;
+    color:$black;
    
   }
   
- 
+ .mapa{
+  width: 97%;
+
+ }
   

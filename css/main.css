@@ -457,7 +457,11 @@ p {
   text-align: center;
   border: none;
   background-color: lightgrey;
-  color: #fff;
+  color: #000;
+}
+
+.mapa {
+  width: 97%;
 }
 
 /*# sourceMappingURL=main.css.map */
